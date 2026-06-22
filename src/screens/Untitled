@@ -1,0 +1,7 @@
+<label htmlFor="memo-input">메모 내용</label>
+      <input
+        id="memo-input"
+        type="text"
+        value={content}
+        onChange={onInputChange}
+      />
