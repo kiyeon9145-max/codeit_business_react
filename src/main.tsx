@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { GreetingComponent } from "./components/greeting";
+import { MemoScreen } from "./screens/memo-screen";
+import CounterScreen from "./screens/counter-screen";
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <h1>안녕하세요</h1>
-    <h1>x: 1 + 1</h1>
-    <h1>x: {1 + 1}</h1>
+    <CounterScreen></CounterScreen>
   </StrictMode>,
-)
+);
